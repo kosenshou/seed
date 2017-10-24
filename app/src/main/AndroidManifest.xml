@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eleartech.speed">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddressActivity"
+            android:label="Address" />
+        <activity
+            android:name=".LandActivity"
+            android:label="Land Details" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Personal Information" />
+        <activity
+            android:name=".RegionalActivity"
+            android:label="Region III" />
+        <activity
+            android:name=".ProvincialActivity"
+            android:label="Aurora" />
+        <activity
+            android:name=".MunicipalActivity"
+            android:label="Municipal" />
+        <activity
+            android:name=".RegionalProcurementActivity"
+            android:label="Regional Procurement" />
+        <activity
+            android:name=".MunicipalAllocationActivity"
+            android:label="Farmer Seed Allocation" />
+        <activity
+            android:name=".MunicipalReleasingActivity"
+            android:label="Farmer Seed Releasing" />
+        <activity
+            android:name=".MunicipalListActivity"
+            android:label="General Masterlist" />
+        <activity android:name=".MunicipalEditListActivity" />
+        <activity android:name=".MunicipalityReleasingEditActivity"></activity>
+    </application>
+
+</manifest>

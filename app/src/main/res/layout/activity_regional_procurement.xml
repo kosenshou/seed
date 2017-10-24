@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eleartech.speed.RegionalProcurementActivity">
+
+    <TextView
+        android:id="@+id/provinceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:text="Province Name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/totalHectaresTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/provinceTextView"
+        android:layout_alignStart="@+id/provinceTextView"
+        android:layout_below="@+id/provinceTextView"
+        android:layout_marginTop="20dp"
+        android:text="Total Hectares: 100"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalHectaresTextView"
+        android:layout_alignStart="@+id/totalHectaresTextView"
+        android:layout_below="@+id/totalHectaresTextView"
+        android:layout_marginTop="40dp"
+        android:text="Allocation: (no. of sacks to give)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/sacksToAllocate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sacksToAllocate"
+        android:layout_alignStart="@+id/sacksToAllocate"
+        android:layout_below="@+id/sacksToAllocate"
+        android:layout_marginTop="50dp"
+        android:text="Inspection: (no. of sacks inspected)"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/sacksInspected"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="proceedClicked"
+        android:text="Proceed" />
+
+    <Button
+        android:id="@+id/confirmAllocationButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sacksToAllocate"
+        android:layout_toEndOf="@+id/button8"
+        android:layout_toRightOf="@+id/button8"
+        android:onClick="confirmAllocationClicked"
+        android:text="Confirm" />
+
+    <Button
+        android:id="@+id/confirmInspectionButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sacksInspected"
+        android:layout_alignLeft="@+id/confirmAllocationButton"
+        android:layout_alignStart="@+id/confirmAllocationButton"
+        android:onClick="confirmInspectionClicked"
+        android:text="Confirm" />
+
+</RelativeLayout>
